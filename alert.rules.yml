@@ -1,0 +1,10 @@
+groups:
+  - name: ping-alerts
+    rules:
+      - alert: HostDown
+        expr: probe_success == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          description: "Host {{ $labels.instance }} is down"
