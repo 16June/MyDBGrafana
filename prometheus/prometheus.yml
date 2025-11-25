@@ -3,7 +3,7 @@ global:
 
 # Mount rules file
 rule_files:
-  - "alert.rules.yml"
+  - "./src/alert.rules.yml"
 
 scrape_configs:
   - job_name: 'prometheus'
