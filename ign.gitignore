@@ -1,4 +1,13 @@
+# Docker artifacts
+*.tar.gz
+*.img
+*.log
 
+# Prometheus & Grafana data
 prometheus/data/
 grafana/data/
-*.tar.gz
+
+# Node, Python, etc.
+node_modules/
+__pycache__/
+.env
